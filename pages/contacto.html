@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento | Relojes</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2d28461730.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html">
+            
+            <img class="logo" src="/assets/img/Logo de Talento.png" alt="Logo de la marca">
+
+        </a>
+        <nav class="navHeader">
+            <ul class="ulHeader">
+                <li class="listaItem"><a class="linksHeader" href="../index.html">Inicio</a></li>
+                <li class="listaItem"><a class="linksHeader" href="/pages/productos.html">Productos</a></li>
+                <li class="listaItem"><a class="linksHeader" href="/pages/contacto.html" >Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li class="listaItem"><a class="linksHeader" href="/pages/carrito.html"><i
+                            class="fa-solid fa-cart-shopping"></i></a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <div class="separador"></div>
+    <main>  
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/your-endpoint" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</main>
+</body>
+
+</html>

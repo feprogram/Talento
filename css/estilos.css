@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 0-CSS para todo el HTML */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilda Display", serif;
+
+}
+
+.separador{
+
+    height: 10px;
+    background-color: whitesmoke;
+
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+body {
+
+    /* background-image: linear-gradient(to right top, #dedff2, #bfc1e6, #9fa5da, #7f89ce, #5c6ec1, #5b6dc1, #596dc0, #586cc0, #7985cc, #979ed8, #b5b9e4, #d2d4ef); */
+}
+
+/* 1-CSS del header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0, .8);
+    padding: 10px;
+}
+
+.navHeader{
+
+    display: flex;
+    align-items: center;
+}
+
+/*2-CSS del main */
+
+/*2-1 Sección principal del  main del index.html */
+
+.sectionPrincipal {
+
+    background-image: url(../assets/img/Gemini_Generated_Image_ic5ntjic5ntjic5n.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+
+    .textoPrincipalDelMain {
+        text-align: center;
+        width: 50%;
+        color: gray;
+        p {
+            font-size: 1.5rem;
+            color: white;
+            margin: 40px 0;
+            backdrop-filter: blur(15px);
+        }
+    
+        a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: whitesmoke;
+            background-color: #333;
+            border: 2px solid #555;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 10px 20px;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          a:hover {
+            background-color: #555;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+          }
+    
+    }
+}
+
+header,
+footer {
+    .logo {
+
+        width: 100px;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+        margin-right: 15px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .fa-whatsapp {
+        color: #25d366;
+        font-size: 3em;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+.listadoDeProductosDestacados, .listadoDeNuestrasMarcas, .listadoDeNuestrosClientes{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    text-align: center;
+
+
+}
+.productosDestacados, .nuestrasMarcas, .nuestrosClientes {
+
+    margin: 15px 0;
+    
+    h2{
+
+        margin: 15px 0;
+
+    }
+    img {height: 200px;
+        width: 200px;
+        margin: 15px 0;
+        box-shadow: 10px 5px 10px black;
+        
+    }
+    a{
+        color: white;
+    }
+  
+}
+
+.nuestrosClientes{
+
+    
+    img {
+        
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+.nosotros{
+
+    background-image: url("/assets/img/istockphoto-149340775-1024x1024.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 85vh;
+
+    h2{
+         
+        border: 2px solid red;
+
+    }
+
+}
+
+footer {
+    
+    .contenedorPrincipal{
+    
+            display: grid;
+            top: 0;
+            background-color: rgb(0, 0, 0, .8);
+            padding: 10px;
+            color: white;
+    }
+}
