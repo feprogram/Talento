@@ -30,11 +30,6 @@ h2 {
 }
 
 
-body {
-
-    /* background-image: linear-gradient(to right top, #dedff2, #bfc1e6, #9fa5da, #7f89ce, #5c6ec1, #5b6dc1, #596dc0, #586cc0, #7985cc, #979ed8, #b5b9e4, #d2d4ef); */
-}
-
 /* 1-CSS del header */
 
 .header {
@@ -57,7 +52,7 @@ body {
 
 /*2-1 Sección principal del  main del index.html */
 
-.sectionPrincipal {
+.sectionPrincipalIndex {
 
     background-image: url(../assets/img/Gemini_Generated_Image_ic5ntjic5ntjic5n.jpeg);
     background-size: cover;
@@ -149,7 +144,8 @@ footer {
         
     }
     a{
-        color: white;
+        color: black;
+        
     }
   
 }
@@ -182,13 +178,38 @@ footer {
 }
 
 footer {
+    background-color: rgb(0, 0, 0, .8);
     
-    .contenedorPrincipal{
+    .contenedorPrincipalFooter{
     
-            display: grid;
+            display: flex;
             top: 0;
-            background-color: rgb(0, 0, 0, .8);
             padding: 10px;
             color: white;
-    }
+    
+            .contenedorDos{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                address{
+
+                    text-align: center;
+
+                }
+
+
+            }
+    
+            .contenedorTres{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+            }
+    
+    
+        }
 }
