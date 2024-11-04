@@ -122,22 +122,10 @@ footer {
 }
 
 
-
-.listadoDeProductosDestacadosIndex,
-.listadoDeNuestrasMarcasIndex,
-.listadoDeNuestrosClientesIndex {
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-around;
-    text-align: center;
-}
-
 .productosDestacados,
 .nuestrasMarcas,
 .nuestrosClientes {
-
+    
     margin: 15px 0;
 
     h2 {
@@ -154,16 +142,84 @@ footer {
     a {
         color: black;
     }
-}
-
-.nuestrosClientes {
-
-    img {
-
-        width: 200px;
-        height: 200px;
+    .cliente{
+ 
+        p {
+            max-width: 250px;
+        }
+       
     }
 }
+
+.listadoDeProductosDestacadosIndex,
+.listadoDeNuestrasMarcasIndex,
+.listadoDeNuestrosClientesIndex {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    text-align: center;
+    height: auto;
+    
+}
+
+
+
+.productosDestacados{
+
+    .producto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4{
+
+            text-decoration: none;
+            color: #257a57;
+        }
+
+        a {
+            width: 80%;
+            text-decoration: none;
+            font-size: .8rem;
+            color: whitesmoke;
+            background-color: #333;
+            border: 2px solid #555;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 5px 10px;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        a:hover {
+            background-color: #555;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+        }
+    }  
+}
+
+.nuestrasMarcas{
+    background-image: url(../assets/img/istockphoto-1204442466-1024x1024.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+
+
+    h2{
+
+        margin: 0;
+        padding: 0;
+
+    }
+
+}
+
+
+
+
+
 
 
 .nosotrosCuerpo{
@@ -356,5 +412,11 @@ footer {
 textarea {
     resize: none;
     height: 100px;
+}
+
+
+.mainCarrito{
+
+    height: 65vh;
 }
 
