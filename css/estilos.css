@@ -216,11 +216,14 @@ footer {
 
 }
 
+.nosotros{
 
+    .h2Nosotros{
+        background-image: linear-gradient(to right top, #d5cabd, #c5b39d, #b49c7f, #a48561, #936f45, #936f45, #936f45, #936f45, #a48561, #b49c7f, #c5b39d, #d5cabd);
+        color: whitesmoke;
+    }
 
-
-
-
+}
 
 .nosotrosCuerpo{
     display: grid;
@@ -229,20 +232,20 @@ footer {
         "nosotrosTexto nosotrosTexto img1"
         "img4 img3 img2";
         
-    background-image: url("../assets/img/istockphoto-149340775-1024x1024.jpg");
+    /* background-image: url("../assets/img/istockphoto-149340775-1024x1024.jpg"); */
+    background-image: linear-gradient(to right top, #d5cabd, #c5b39d, #b49c7f, #a48561, #936f45, #936f45, #936f45, #936f45, #a48561, #b49c7f, #c5b39d, #d5cabd);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     gap: 20px;
     padding: 15px;
-  
 
 
 .nosotrosTexto{
 
     grid-area: nosotrosTexto;
     padding: 15px;
-    color: black; 
+    color: white; 
     text-align: justify;
 
 }
@@ -291,10 +294,6 @@ footer {
     }
 
 }
-
-
-
-
 
 footer {
     background-color: rgb(0, 0, 0, .8);
