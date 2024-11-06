@@ -27,9 +27,9 @@ h2 {
 }
 
 h4 {
-    font-weight:bolder;
+    font-weight: bolder;
     text-decoration: underline;
-  }
+}
 
 /* 1-CSS del header */
 
@@ -57,6 +57,7 @@ footer {
     }
 
     ul {
+       
         list-style: none;
     }
 
@@ -69,6 +70,7 @@ footer {
             text-decoration: none;
         }
     }
+
     .fa-whatsapp {
         color: #25d366;
         font-size: 3em;
@@ -77,6 +79,23 @@ footer {
         right: 20px;
     }
 }
+
+@media screen and (max-width: 768px){
+    
+    .header {
+        display: flex;
+        justify-content: space-between;   
+    }
+    .ulHeader {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+
+
+
 
 /*2-CSS del main*/
 
@@ -122,10 +141,39 @@ footer {
 }
 
 
+@media screen and (max-width: 768px){
+    
+    .sectionPrincipalIndex {
+        
+        display: flex;
+        flex-direction: column;
+        height: initial;
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        .textoPrincipalDelMain {
+            
+            text-align: center;
+           
+            width: 100%;
+          
+            p {
+                font-size: 1.2rem;
+            }
+            a {
+                
+                font-size:.8rem;         
+            }
+          }
+    }}
+
+
 .productosDestacados,
 .nuestrasMarcas,
 .nuestrosClientes {
-    
+
     margin: 15px 0;
 
     h2 {
@@ -142,12 +190,13 @@ footer {
     a {
         color: black;
     }
-    .cliente{
- 
+
+    .cliente {
+
         p {
             max-width: 250px;
         }
-       
+
     }
 }
 
@@ -161,19 +210,18 @@ footer {
     justify-content: space-around;
     text-align: center;
     height: auto;
-    
+
 }
 
 
+.productosDestacados {
 
-.productosDestacados{
-
-    .producto{
+    .producto {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        h4{
+        h4 {
 
             text-decoration: none;
             color: #257a57;
@@ -191,47 +239,43 @@ footer {
             padding: 5px 10px;
             transition: all 0.3s ease-in-out;
         }
-    
+
         a:hover {
             background-color: #555;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
         }
-    }  
+    }
 }
 
-.nuestrasMarcas{
+.nuestrasMarcas {
     background-image: url(../assets/img/istockphoto-1204442466-1024x1024.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
 
-
-    h2{
-
+    h2 {
         margin: 0;
         padding: 0;
-
     }
-
 }
 
-.nosotros{
+.nosotros {
 
-    .h2Nosotros{
+    .h2Nosotros {
         background-image: linear-gradient(to right top, #d5cabd, #c5b39d, #b49c7f, #a48561, #936f45, #936f45, #936f45, #936f45, #a48561, #b49c7f, #c5b39d, #d5cabd);
         color: whitesmoke;
     }
 
 }
 
-.nosotrosCuerpo{
+.nosotrosCuerpo {
     display: grid;
     grid-row: auto;
     grid-template-areas:
         "nosotrosTexto nosotrosTexto img1"
         "img4 img3 img2";
-        
+
     /* background-image: url("../assets/img/istockphoto-149340775-1024x1024.jpg"); */
     background-image: linear-gradient(to right top, #d5cabd, #c5b39d, #b49c7f, #a48561, #936f45, #936f45, #936f45, #936f45, #a48561, #b49c7f, #c5b39d, #d5cabd);
     background-repeat: no-repeat;
@@ -240,44 +284,41 @@ footer {
     gap: 20px;
     padding: 15px;
 
+    .nosotrosTexto {
 
-.nosotrosTexto{
+        grid-area: nosotrosTexto;
+        padding: 15px;
+        color: white;
+        text-align: justify;
+    }
 
-    grid-area: nosotrosTexto;
-    padding: 15px;
-    color: white; 
-    text-align: justify;
-
-}
-
-    img{
+    img {
         height: 300px;
         width: 100%;
     }
-    .img1{
+    .img1 {
 
         grid-area: img1;
         height: 300px;
         width: 100%;
-
     }
 
-    .img2{
+    .img2 {
 
         grid-area: img2;
         height: 300px;
         width: 100%;
-
     }
 
-    .img3{
+    .img3 {
 
         grid-area: img3;
         height: 300px;
         width: 100%;
 
     }
-    .img4{
+
+    .img4 {
 
         grid-area: img4;
         height: 300px;
@@ -285,15 +326,26 @@ footer {
 
     }
 
-    .img5{
+    .img5 {
 
         grid-area: img5;
         height: 300px;
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .nosotrosCuerpo{
+        
+        .img1, .img2, .img3, .img4{
+
+            display: none;
+        }
+    }
 
     }
 
-}
 
 footer {
     background-color: rgb(0, 0, 0, .8);
@@ -317,6 +369,7 @@ footer {
 
             }
         }
+
         .contenedorTres {
             display: flex;
             flex-direction: column;
@@ -324,6 +377,64 @@ footer {
             align-items: center;
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+
+    footer {
+    
+        .contenedorPrincipalFooter {
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .contenedorUno{
+                
+                a{
+                    
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .logo{
+
+                    width: 20%;
+                    justify-content: center;
+                }
+            }
+
+            .contenedorDos{
+
+                nav{
+                   
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+
+                    }
+
+                }
+            }
+
+            nav{
+
+                .contenedorTres{
+
+                    display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+
+                }
+
+            }
+    
+        }
+    }
+
+
 }
 
 /* CSS contacto.html*/
@@ -413,9 +524,7 @@ textarea {
     height: 100px;
 }
 
-
-.mainCarrito{
+.mainCarrito {
 
     height: 65vh;
 }
-
